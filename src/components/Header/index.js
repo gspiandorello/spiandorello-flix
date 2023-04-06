@@ -5,7 +5,7 @@ function Header(){
     return(
         <header>
             <Link className="logo" to="/">Spiandorello Flix</Link>
-            <Link className="favoritos" to="/favoritos">Meus Filmes</Link>
+            <Link className="favoritos" to="/meus-filmes">Meus Filmes</Link>
         </header>
     )
 }
