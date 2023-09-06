@@ -36,3 +36,14 @@
     color: #116feb;
     margin-right: 14px;
 }
+
+.icons {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.eye-icon {
+    width: 2rem;
+    margin-right: 8px;
+}

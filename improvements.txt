@@ -1,4 +1,4 @@
 Página Meus Filmes:
 
--Colocar ícone de lixeira ao invés de botão de excluir e abrir uma modal perguntando se eu realmente desejo excluir aquele filme da minha lista
--Colocar ícone de "olho" para ver os detalhes do filme (quando passar o mouse, aparecer um texto alternativo "Detalhes do filme")
+-Ao clicar no ícone de lixeira, abrir um pop-up de confirmação perguntando se eu realmente desejo excluir aquele filme da minha lista
+-Estilizar ícone da lixeira e do olho na página Meus Filmes
