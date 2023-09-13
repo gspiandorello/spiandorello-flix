@@ -1,4 +1,3 @@
-Página Meus Filmes:
+Meus Filmes Page:
 
--Ao clicar no ícone de lixeira, abrir um pop-up de confirmação perguntando se eu realmente desejo excluir aquele filme da minha lista
--Estilizar ícone da lixeira e do olho na página Meus Filmes
+-When you click in the trash icon, must show an confirmation pop-up, asking if you are sure about the action that you are making.

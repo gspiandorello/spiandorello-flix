@@ -1,49 +1,73 @@
-.meus-filmes{
-    margin-top: 24px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.meus-filmes {
+  margin-top: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.meus-filmes h1{
-    margin-bottom: 14px;
+.meus-filmes h1 {
+  margin-bottom: 14px;
 }
 
-.meus-filmes span{
-    font-size: 18px;
+.meus-filmes span {
+  font-size: 18px;
 }
 
-.meus-filmes ul{
-    width: 720px;
+.meus-filmes ul {
+  width: 720px;
 }
 
-.meus-filmes ul li{
-    list-style: none;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 14px;
+.meus-filmes ul li {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 14px;
 }
 
-.meus-filmes div{
-    display:flex;
-    justify-content: center;
-    align-items: center;
+.meus-filmes div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.meus-filmes div a{
-    text-decoration: none;
-    color: #116feb;
-    margin-right: 14px;
+.meus-filmes div a {
+  text-decoration: none;
+  color: #116feb;
+  margin-right: 14px;
+}
+
+.div-icon {
+  gap: 8px;
 }
 
 .icons {
-    background: none;
-    border: none;
-    cursor: pointer;
+  background: none;
+  border: none;
+  cursor: pointer;
 }
 
 .eye-icon {
-    width: 2rem;
-    margin-right: 8px;
+  width: 2.3rem;
+  padding: 2px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.eye-icon:hover {
+  background-color: lightgray;
+  color: #fff;
+}
+
+.delete-icon {
+  width: 2.3rem;
+  padding: 3px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.delete-icon:hover {
+  background-color: rgb(255, 49, 49);
 }
