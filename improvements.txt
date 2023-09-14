@@ -1,3 +1,0 @@
-Meus Filmes Page:
-
--When you click in the trash icon, must show an confirmation pop-up, asking if you are sure about the action that you are making.

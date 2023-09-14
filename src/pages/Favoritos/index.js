@@ -1,30 +1,12 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { toast } from "react-toastify";
-import { ConfirmPopup, confirmPopup } from "primereact/confirmpopup";
 import trashIcon from "../../assets/trash-icon.svg";
 import eyeIcon from "../../assets/eye-icon.svg";
 import "./style.css";
 
 function Favoritos() {
   const [filmes, setFilmes] = useState([]);
-
-  const accept = (id) => {
-    excluirFilme(id);
-  };
-
-  const reject = () => {};
-
-  const confirm = (event, id) => {
-    confirmPopup({
-      target: event.currentTarget,
-      message: "Você tem certeza que gostaria de excluir o filme da sua lista?",
-      icon: "pi pi-info-circle",
-      acceptClassName: "p-button-danger",
-      accept: () => accept(id),
-      reject,
-    });
-  };
 
   useEffect(() => {
     const minhaLista = localStorage.getItem("@spiandorelloflix");
@@ -66,7 +48,7 @@ function Favoritos() {
                     src={trashIcon}
                     alt="Delete Icon"
                     className="delete-icon"
-                    onClick={(event) => confirm(event, item.id)}
+                    onClick={() => excluirFilme(item.id)}
                     title="Excluir filme da sua lista"
                   />
                 </button>
@@ -74,7 +56,6 @@ function Favoritos() {
             </li>
           );
         })}
-        <ConfirmPopup />
       </ul>
     </div>
   );
