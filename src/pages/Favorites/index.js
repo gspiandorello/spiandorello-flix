@@ -5,41 +5,41 @@ import trashIcon from "../../assets/trash-icon.svg";
 import eyeIcon from "../../assets/eye-icon.svg";
 import "./style.css";
 
-function Favoritos() {
-  const [filmes, setFilmes] = useState([]);
+function Favorites() {
+  const [movies, setMovies] = useState([]);
 
   useEffect(() => {
-    const minhaLista = localStorage.getItem("@spiandorelloflix");
-    setFilmes(JSON.parse(minhaLista) || []);
+    const myList = localStorage.getItem("@spiandorelloflix");
+    setMovies(JSON.parse(myList) || []);
   }, []);
 
-  function excluirFilme(id) {
-    let filtroFilmes = filmes.filter((item) => {
+  function deleteMovie(id) {
+    let filteredMovies = movies.filter((item) => {
       return item.id !== id;
     });
 
-    setFilmes(filtroFilmes);
+    setMovies(filteredMovies);
 
-    localStorage.setItem("@spiandorelloflix", JSON.stringify(filtroFilmes));
-    toast.success("Filme removido com sucesso!");
+    localStorage.setItem("@spiandorelloflix", JSON.stringify(filteredMovies));
+    toast.success("Movie deleted with success! 🎉");
   }
 
   return (
-    <div className="meus-filmes">
-      <h1>Meus Filmes</h1>
+    <div className="my-movies">
+      <h1>My Movies</h1>
 
-      {filmes.length === 0 && (
-        <span>Você não possui nenhum filme salvo ainda :( </span>
+      {movies.length === 0 && (
+        <span>You don't have any movies saved yet :( </span>
       )}
 
       <ul>
-        {filmes.map((item) => {
+        {movies.map((item) => {
           return (
             <li key={item.id}>
               <span>{item.title}</span>
               <div className="div-icons">
                 <button className="icons">
-                  <Link to={`/filme/${item.id}`} title="Ver detalhes do filme">
+                  <Link to={`/movie/${item.id}`} title="View movie details">
                     <img src={eyeIcon} alt="Eye Icon" className="eye-icon" />
                   </Link>
                 </button>
@@ -48,8 +48,8 @@ function Favoritos() {
                     src={trashIcon}
                     alt="Delete Icon"
                     className="delete-icon"
-                    onClick={() => excluirFilme(item.id)}
-                    title="Excluir filme da sua lista"
+                    onClick={() => deleteMovie(item.id)}
+                    title="Delete movie from your list"
                   />
                 </button>
               </div>
@@ -61,4 +61,4 @@ function Favoritos() {
   );
 }
 
-export default Favoritos;
+export default Favorites;

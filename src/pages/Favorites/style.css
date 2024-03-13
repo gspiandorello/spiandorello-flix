@@ -1,23 +1,23 @@
-.meus-filmes {
+.my-movies {
   margin-top: 24px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.meus-filmes h1 {
+.my-movies h1 {
   margin-bottom: 14px;
 }
 
-.meus-filmes span {
+.my-movies span {
   font-size: 18px;
 }
 
-.meus-filmes ul {
+.my-movies ul {
   width: 720px;
 }
 
-.meus-filmes ul li {
+.my-movies ul li {
   list-style: none;
   display: flex;
   justify-content: space-between;
@@ -25,13 +25,13 @@
   margin-bottom: 14px;
 }
 
-.meus-filmes div {
+.my-movies div {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.meus-filmes div a {
+.my-movies div a {
   text-decoration: none;
   color: #116feb;
   margin-right: 14px;
