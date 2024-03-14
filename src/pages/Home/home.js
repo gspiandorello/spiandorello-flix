@@ -1,7 +1,8 @@
 import { useEffect, useState } from "react";
 import api from "../../services/api";
 import { Link } from "react-router-dom";
-import "./style.css";
+import "./home.css";
+import ScrollToTopButton from "../../components/ScrollToTopButton/scrollToTopButton";
 
 function Home() {
   const [movies, setMovies] = useState([]);
@@ -50,6 +51,7 @@ function Home() {
           );
         })}
       </div>
+      <ScrollToTopButton />
     </div>
   );
 }

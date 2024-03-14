@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { toast } from "react-toastify";
 import trashIcon from "../../assets/trash-icon.svg";
 import eyeIcon from "../../assets/eye-icon.svg";
-import "./style.css";
+import "./favorites.css";
 
 function Favorites() {
   const [movies, setMovies] = useState([]);
