@@ -15,6 +15,11 @@
   align-items: center;
 }
 
+.scrollToTopButton:hover {
+  background-color: #545454;
+  transition: all 0.5s;
+}
+
 .up-arrow {
   width: 2rem;
 }
